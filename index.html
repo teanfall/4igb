@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件转链接 - 布丁的文件仓库</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 文件仓库</h1>
+            <p>上传文件，自动生成 jsdelivr 加速链接</p>
+        </header>
+        
+        <main>
+            <section class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="17 8 12 3 7 8"></polyline>
+                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                    </svg>
+                    <p>拖拽文件到这里或点击选择</p>
+                    <input type="file" id="fileInput" style="display: none;">
+                </div>
+                <button id="uploadBtn" class="btn btn-primary">选择文件</button>
+            </section>
+
+            <section class="files-section">
+                <h2>已上传的文件</h2>
+                <div id="fileList" class="file-list">
+                    <p class="empty-text">还没有文件呢，上传一个吧~</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+<!-- @budding -->
